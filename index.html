@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Redpill privacy policy</title>
+<meta name="description" content="Privacy policy for the Redpill medication reminder app for Android.">
+<style>
+  :root {
+    --bg: #f7f5f3;
+    --card: #ffffff;
+    --text: #1d1b1a;
+    --muted: #625a58;
+    --accent: #d23b30;
+    --line: #e3deda;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121110;
+      --card: #1f1d1c;
+      --text: #ece6e3;
+      --muted: #c9c0bd;
+      --accent: #ff8a7e;
+      --line: #34302f;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 16px 64px; }
+  .eyebrow { color: var(--accent); font-weight: 600; margin: 0; }
+  h1 { font-size: 2.2rem; line-height: 1.15; margin: 4px 0 8px; letter-spacing: -0.02em; }
+  .updated { color: var(--muted); margin: 0 0 32px; }
+  .summary {
+    background: var(--card);
+    border-radius: 20px;
+    padding: 20px 24px;
+    margin-bottom: 32px;
+  }
+  .summary p { margin: 0; font-size: 1.1rem; }
+  h2 { font-size: 1.25rem; margin: 36px 0 8px; }
+  ul { padding-left: 1.2em; }
+  li { margin: 6px 0; }
+  table { width: 100%; border-collapse: collapse; background: var(--card); border-radius: 16px; overflow: hidden; }
+  th, td { text-align: left; vertical-align: top; padding: 12px 16px; border-bottom: 1px solid var(--line); }
+  th { font-weight: 600; white-space: nowrap; }
+  tr:last-child th, tr:last-child td { border-bottom: none; }
+  code { font-size: 0.85em; color: var(--muted); }
+  a { color: var(--accent); }
+  @media (max-width: 520px) {
+    th { white-space: normal; }
+    th, td { display: block; padding: 8px 16px; }
+    th { padding-top: 14px; border-bottom: none; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <p class="eyebrow">Redpill for Android</p>
+  <h1>Privacy policy</h1>
+  <p class="updated">Last updated 19 October 2026</p>
+
+  <div class="summary">
+    <p><strong>Redpill doesn't collect, send or share any of your data.</strong> Everything you enter stays on your phone. The app has no account, no ads, no analytics and no internet access.</p>
+  </div>
+
+  <h2>Who we are</h2>
+  <p>Redpill is a medication reminder app made by SADLADS. In this policy, "we" means the developer of Redpill. If you have a question about privacy, contact us at <a href="mailto:sadlads@proton.me">sadlads@proton.me</a>.</p>
+
+  <h2>What the app stores, and where</h2>
+  <p>To remind you about your medication, Redpill stores the following on your phone:</p>
+  <ul>
+    <li>the medications you add: name, strength, form, the icon you choose, stock and refill level</li>
+    <li>their schedules and reminder times</li>
+    <li>your dose history: what you took, skipped or missed, and when</li>
+    <li>your settings, such as alarm sound, vibration and theme</li>
+  </ul>
+  <p>This information is kept in the app's private storage on your phone, which other apps can't read. It isn't sent to us or to anyone else. Redpill doesn't ask for the internet permission, so it can't connect to the internet at all.</p>
+  <p>Redpill turns off Android's cloud backup for its data, so it isn't copied to Google's backup servers. If you move to a new phone using Android's phone-to-phone transfer, your phone may copy the app's data directly to the new device; that happens between your own devices and doesn't involve us.</p>
+
+  <h2>What we collect</h2>
+  <p>Nothing. We don't receive your medication information, your dose history, your contact details, your location, any device identifiers or any usage statistics. Redpill contains no advertising, analytics, tracking or crash-reporting services, and no third-party code that sends data anywhere.</p>
+  <p>Google Play may collect information about your download and use of Play itself, as described in Google's own privacy policy. That's outside the app and we don't receive anything personal from it.</p>
+
+  <h2>Permissions the app uses</h2>
+  <p>Each permission is used only on your phone, for reminders:</p>
+  <table>
+    <tr><th>Notifications</th><td>Shows a reminder when a dose is due, and when you're running low on a medication. <code>POST_NOTIFICATIONS</code></td></tr>
+    <tr><th>Alarms and reminders</th><td>Lets reminders go off at the exact time you set, even when the phone is idle. <code>USE_EXACT_ALARM</code>, <code>SCHEDULE_EXACT_ALARM</code></td></tr>
+    <tr><th>Full-screen alarms</th><td>Shows the medication alarm over the lock screen, like a clock app's alarm. <code>USE_FULL_SCREEN_INTENT</code></td></tr>
+    <tr><th>Display over other apps</th><td>Optional. Lets the alarm appear over whatever you're using and stay until you answer it. <code>SYSTEM_ALERT_WINDOW</code></td></tr>
+    <tr><th>Run after restart</th><td>Sets your reminders again after the phone restarts. <code>RECEIVE_BOOT_COMPLETED</code></td></tr>
+    <tr><th>Alarm sound and vibration</th><td>Keeps the alarm sound and vibration playing until you respond. <code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_MEDIA_PLAYBACK</code>, <code>VIBRATE</code></td></tr>
+  </table>
+
+  <h2>Deleting your data</h2>
+  <p>Because your data only exists on your phone, you're in control of it:</p>
+  <ul>
+    <li>delete a medication in the app, which also deletes its history</li>
+    <li>clear the app's storage in your phone's settings, or</li>
+    <li>uninstall Redpill, which deletes all of its data.</li>
+  </ul>
+  <p>We can't recover or delete your data for you, because we never have a copy of it.</p>
+
+  <h2>Children</h2>
+  <p>Redpill is intended for adults and isn't directed at children. It doesn't knowingly collect information from anyone, including children.</p>
+
+  <h2>Medical disclaimer</h2>
+  <p>Redpill is a reminder tool. It doesn't give medical advice and doesn't replace advice from your doctor, pharmacist or other healthcare professional.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If the way Redpill handles information changes, we'll update this page and the date at the top before the change takes effect. If the app ever starts collecting data, we'll say so here and in the app first.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy: <a href="mailto:sadlads@proton.me">sadlads@proton.me</a></p>
+</main>
+</body>
+</html>
